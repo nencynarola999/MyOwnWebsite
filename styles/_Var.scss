@@ -1,0 +1,13 @@
+$logo-color: #e97d4e;
+$logo-lightcolor: #f9a37ea9;
+$logo-darkcolor: #e97c4daa;
+$white-color: #ffffff;
+$text-lightcolor: rgb(95, 92, 92);
+$text-darkcolor: rgb(30, 30, 30);
+$black-color: rgb(0, 0, 0);
+
+:root{ 
+    --data-color-logo: #{$logo-color};
+    --data-color-lightcolor: #{$logo-lightcolor};
+    --data-color-darkcolor: #{$logo-darkcolor};
+  }
