@@ -7,5 +7,4 @@ const CMapsec = () => {
   </div>
   )
 }
-
 export default CMapsec

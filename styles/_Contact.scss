@@ -1,0 +1,83 @@
+@import './Var';
+@import './Mixin.module';
+
+// --------------------CONTACT PAGE-------------------------
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+// 3333333333333............
+.Cthreemaindiv {
+    .Cthreediv1 {
+      position: relative;
+      background-color: $white-color;
+      @include widthheight(100%, 400px);
+      box-shadow: rgba($black-color, 0.25) 0px 5px 15px;
+      @include flexcenter;
+      flex-direction: column;
+  
+      img {
+        transition: all 0.5s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+  
+      h5 {
+        color: var(--data-color-darkcolor);
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  // -------------------------------------------------------------------- CONTACT RESPONSIVE
+  @media only screen and (max-width: 575.98px) {
+    // .Cthreemaindiv {
+    //   @include widthheight(100%, 1300px);
+    // }
+  }
+  
+  @media only screen and (min-width: 767.98px) {
+    // .Cthreemaindiv {
+    //   @include widthheight(100%, 900px);
+    // }
+  }
+  
+  @media only screen and (min-width: 991px) {
+    // .Cthreemaindiv {
+    //   @include widthheight(100%, 400px);
+    // }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .Cthreemaindiv {
+    //   @include widthheight(100%, 400px);
+  
+      .Cthreediv1 {
+        .Cthreediv2 {
+          @include widthheight(100%, 24%);
+          @include topleft(38%, -38%);
+          @include flexcenter;
+          @include Cthreediv23(rgba($black-color, 0.043), rotate(90deg));
+  
+          h6 {
+            color: $text-lightcolor;
+            font-family: Oswald, sans-serif;
+          }
+        }
+  
+        .Cthreediv3 {
+          @include widthheight(100%, 24%);
+          @include topleft(38%, 38.3%);
+          @include flexcenter;
+          @include Cthreediv23(rgba($black-color, 0.1), rotate(270deg));
+  
+          h6 {
+            color: $text-lightcolor;
+            font-family: Oswald, sans-serif;
+          }
+        }
+      }
+    }
+  }
+  

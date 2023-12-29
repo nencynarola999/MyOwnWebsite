@@ -13,7 +13,6 @@ const service = () => {
             <SSixdivsec/>
             <Saccorsec/>
             <STwobgsec/>
-
         </div>
     )
 }

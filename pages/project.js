@@ -12,5 +12,4 @@ const project = () => {
     </div>
   )
 }
-
 export default project

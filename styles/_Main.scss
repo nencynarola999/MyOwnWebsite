@@ -131,6 +131,7 @@
     }
   }
 }
+
 // .circle {
 //   position: relative;
 //   margin: 20px;
@@ -165,11 +166,6 @@
   background-color: var(--data-color-lightcolor);
 }
 
-// 2222222222..........background
-.carouselbg {
-  @include widthheight(100%, 900px);
-}
-
 // 33333......threeimg
 .threeimg {
   background-image: url("./../public/mainimg3.jpg");
@@ -179,7 +175,7 @@
   .textwritten {
     text-align: center;
 
-    h1 {
+    h2 {
       color: $text-darkcolor;
       font-weight: bold;
       font-family: Oswald, sans-serif;
@@ -195,7 +191,7 @@
       }
     }
 
-    h6 {
+    p {
       font-size: 15px;
       color: $text-lightcolor;
       font-family: Oswald, sans-serif;
@@ -232,15 +228,15 @@
         margin-bottom: 20px;
       }
 
-      h5 {
+      h6 {
         line-height: 10px;
       }
 
-      h4 {
+      h3 {
         line-height: 60px;
       }
 
-      h6 {
+      p {
         color: $text-lightcolor;
         font-size: 15px;
         position: relative;
@@ -323,7 +319,6 @@
 .slidermain {
   background-color: $white-color;
   padding: 30px 0px;
-  @include widthheight(100%, 750px);
   @include flexcenter;
 
   button:not(:disabled),
@@ -381,7 +376,7 @@
   .slidertextwritten {
     text-align: center;
 
-    h1 {
+    h2 {
       color: $text-darkcolor;
       font-weight: bold;
       font-family: Oswald, sans-serif;
@@ -397,7 +392,7 @@
       }
     }
 
-    h6 {
+    p {
       font-size: 15px;
       color: $text-lightcolor;
       font-family: Oswald, sans-serif;
@@ -411,28 +406,10 @@
 
   .posi2 {
     position: absolute;
-    @include topleft(35%, 45%);
-
-    h4 {
-      @include numberposi2(0px, var(--data-color-logo), 21px);
-    }
-
-    h6 {
-      @include numberposi2(7px, $white-color, 17px);
-    }
   }
 
   .posi3 {
     position: absolute;
-    @include topleft(35%, 30%);
-
-    h4 {
-      @include numberposi2(0px, var(--data-color-logo), 21px);
-    }
-
-    h6 {
-      @include numberposi2(7px, $white-color, 17px);
-    }
   }
 
   .numberdiv {
@@ -454,7 +431,6 @@
 
 // 77777777..........
 .fourimg {
-  @include widthheight(100%, 700px);
 
   button {
     display: none !important;
@@ -463,7 +439,7 @@
   .fourtextwritten {
     text-align: center;
 
-    h1 {
+    h2 {
       color: $text-darkcolor;
       font-weight: bold;
       font-family: Oswald, sans-serif;
@@ -479,7 +455,7 @@
       }
     }
 
-    h6 {
+    p {
       font-size: 15px;
       color: $text-lightcolor;
       font-family: Oswald, sans-serif;
@@ -639,25 +615,25 @@
       position: absolute;
     }
 
-    div {
+    .twoimgsetdiv {
       background-color: $black-color;
       position: absolute;
       @include flexcenter;
 
-      h1 {
+      .twoimgsetdivh1 {
         color: var(--data-color-logo);
         font-size: 60px;
         margin-right: 10px;
       }
 
-      h3 {
+      .twoimgsetdivh3 {
         color: $white-color;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: 2px;
       }
     }
 
-    h2 {
+    .twoimgseth2 {
       border-left: 29px solid transparent;
       border-right: 29px solid transparent;
       border-top: 26px solid $black-color;
@@ -714,7 +690,7 @@
   padding: 60px 10px;
 
   .linksetdiv {
-    h6 {
+    p {
       a {
         border: none;
         border-radius: 50%;
@@ -805,14 +781,17 @@
 }
 
 // --------------------------------------------------------------------COMPONENT  RESPONSIVE
+
+@media only screen and (max-width: 345.98px) {}
+
+@media only screen and ((min-width: 350px) and (max-width: 380px)) {}
+
 @media only screen and (max-width: 575.98px) {
   .threeimg {
-    @include widthheight(100%, 1590px);
-
     .textwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
         font-size: 35px;
         line-height: 45px;
 
@@ -827,7 +806,7 @@
     .slidertextwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
         font-size: 35px;
         line-height: 45px;
 
@@ -840,7 +819,7 @@
 
   .fourimg {
     .fourtextwritten {
-      h1 {
+      h2 {
         font-size: 35px;
         line-height: 45px;
 
@@ -852,8 +831,6 @@
   }
 
   .twoimgmaindiv {
-    @include widthheight(100%, 1300px);
-
     .twoimgset {
       @include widthheight(100%, 490px);
 
@@ -869,12 +846,12 @@
         @include topleft(50%, -8%);
       }
 
-      div {
+      .twoimgsetdiv {
         @include widthheight(79%, 130px);
         @include topleft(10%, -8%);
       }
 
-      h2 {
+      .twoimgseth2 {
         @include topleft(36%, 5%);
       }
     }
@@ -883,24 +860,24 @@
       width: 100%;
       padding: 20px 10px;
 
-      h6 {
+      .twoimgsettexth6 {
         @include commoncode(5px, 34px, uppercase, var(--data-color-logo), 100, 16px);
         margin-top: 140px;
       }
 
-      h1 {
+      .twoimgsettexth1 {
         @include commoncode(5px, 40px, uppercase, $text-darkcolor, 600, 30px);
       }
 
-      h2 {
+      .twoimgsettexth2 {
         @include commoncode(5px, 40px, uppercase, var(--data-color-logo), 600, 30px);
       }
 
-      h3 {
+      .twoimgsettexth3 {
         @include commoncode(5px, 40px, uppercase, var(--data-color-logo), 300, 30px);
       }
 
-      h5 {
+      .twoimgsettexth5 {
         @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
       }
     }
@@ -911,7 +888,7 @@
       width: 100%;
     }
 
-    h1 {
+    h2 {
       font-size: 40px;
     }
   }
@@ -922,29 +899,61 @@
 
     div {
       @include widthheight(100%, 100%);
-      padding: 100px 20px;
+      padding: 60px 25px 80px 0px;
 
       .videosub1 {
         @include widthheight(100%, 100%);
 
         img {
           @include widthheight(95%, 100%);
-          top: 17%;
+          top: 15%;
           right: 12%;
         }
       }
     }
   }
+
+  .carouselbg {
+    @include widthheight(100%, 400px);
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 34%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 23%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 767.98px) {
-  .threeimg {
-    @include widthheight(100%, 1100px);
+@media only screen and (min-width: 575.98px) {
+  .carouselbg {
+    @include widthheight(100%, 600px);
+  }
 
+  .threeimg {
     .textwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
         font-size: 40px;
         line-height: 65px;
       }
@@ -955,7 +964,153 @@
     .slidertextwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
+        font-size: 40px;
+        line-height: 65px;
+      }
+    }
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 49%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 35%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+  }
+
+  .fourimg {
+    .fourtextwritten {
+      h2 {
+        font-size: 40px;
+        line-height: 65px;
+      }
+    }
+  }
+
+  .videomaindiv {
+    width: 100%;
+    margin-bottom: 100px;
+
+    div {
+      @include widthheight(100%, 100%);
+      padding: 120px 35px;
+
+      .videosub1 {
+        @include widthheight(100%, 100%);
+
+        img {
+          @include widthheight(100%, 100%);
+          top: 11%;
+          right: 12%;
+        }
+      }
+    }
+  }
+
+  .twoimgmaindiv {
+    .twoimgset {
+      @include widthheight(100%, 600px);
+
+      h4 {
+        img {
+          @include widthheight(100%, 600px);
+          @include topleft(0%, 5%);
+        }
+      }
+
+      img {
+        @include widthheight(71%, 595px);
+        @include topleft(50%, -5%);
+      }
+
+      .twoimgsetdiv {
+        @include widthheight(40%, 130px);
+        @include topleft(10%, -5%);
+      }
+
+      .twoimgseth2 {
+        @include topleft(31.5%, 3%);
+      }
+    }
+
+    .twoimgsettext {
+      width: 95%;
+      margin: 0 auto;
+      padding: 20px 10px;
+
+      .twoimgsettexth6 {
+        @include commoncode(5px, 34px, uppercase, var(--data-color-logo), 500, 16px);
+        margin-top: 330px;
+      }
+
+      .twoimgsettexth1 {
+        @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 47px);
+      }
+
+      .twoimgsettexth2 {
+        @include commoncode(10px, 60px, uppercase, var(--data-color-logo), 600, 47px);
+      }
+
+      .twoimgsettexth3 {
+        @include commoncode(10px, 60px, uppercase, var(--data-color-logo), 300, 47px);
+      }
+
+      .twoimgsettexth5 {
+        @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
+      }
+    }
+  }
+
+  .formimgbg {
+    .formbgsetting {
+      width: 90%;
+      margin: 0 auto;
+      outline: 2px solid var(--data-color-logo);
+      outline-offset: -15px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .threeimg {
+    .textwritten {
+      margin: 100px 0px;
+
+      h2 {
+        font-size: 40px;
+        line-height: 65px;
+      }
+    }
+  }
+
+  .slidermain {
+    .slidertextwritten {
+      margin: 100px 0px;
+
+      h2 {
         font-size: 40px;
         line-height: 65px;
       }
@@ -964,7 +1119,7 @@
 
   .fourimg {
     .fourtextwritten {
-      h1 {
+      h2 {
         font-size: 40px;
         line-height: 65px;
       }
@@ -972,7 +1127,6 @@
   }
 
   .twoimgmaindiv {
-    @include widthheight(100%, 1650px);
 
     .twoimgset {
       @include widthheight(100%, 600px);
@@ -989,12 +1143,12 @@
         @include topleft(50%, -5%);
       }
 
-      div {
+      .twoimgsetdiv {
         @include widthheight(40%, 130px);
         @include topleft(10%, -5%);
       }
 
-      h2 {
+      .twoimgseth2 {
         @include topleft(31.5%, 3%);
       }
     }
@@ -1004,24 +1158,24 @@
       margin: 0 auto;
       padding: 20px 10px;
 
-      h6 {
+      .twoimgsettexth6 {
         @include commoncode(5px, 34px, uppercase, var(--data-color-logo), 500, 16px);
         margin-top: 330px;
       }
 
-      h1 {
+      .twoimgsettexth1 {
         @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 47px);
       }
 
-      h2 {
+      .twoimgsettexth2 {
         @include commoncode(10px, 60px, uppercase, var(--data-color-logo), 600, 47px);
       }
 
-      h3 {
+      .twoimgsettexth3 {
         @include commoncode(10px, 60px, uppercase, var(--data-color-logo), 300, 47px);
       }
 
-      h5 {
+      .twoimgsettexth5 {
         @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
       }
     }
@@ -1035,7 +1189,7 @@
       outline-offset: -15px;
     }
 
-    h1 {
+    h2 {
       font-size: 45px;
     }
   }
@@ -1046,16 +1200,46 @@
 
     div {
       @include widthheight(100%, 100%);
-      padding: 150px 80px;
+      padding: 120px 40px;
 
       .videosub1 {
         @include widthheight(100%, 100%);
 
         img {
           @include widthheight(100%, 100%);
-          top: 14%;
+          top: 9%;
           right: 7%;
         }
+      }
+    }
+  }
+
+  .carouselbg {
+    @include widthheight(100%, 700px);
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 41%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 26%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
       }
     }
   }
@@ -1063,12 +1247,10 @@
 
 @media only screen and (min-width: 991.98px) {
   .threeimg {
-    @include widthheight(100%, 800px);
-
     .textwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
         font-size: 45px;
         line-height: 65px;
       }
@@ -1079,7 +1261,7 @@
     .slidertextwritten {
       margin: 100px 0px;
 
-      h1 {
+      h2 {
         font-size: 45px;
         line-height: 65px;
       }
@@ -1087,8 +1269,6 @@
   }
 
   .twoimgmaindiv {
-    @include widthheight(100%, 900px);
-
     .twoimgset {
       @include widthheight(90%, 600px);
 
@@ -1104,14 +1284,13 @@
         @include topleft(50%, -26%);
       }
 
-      div {
+      .twoimgsetdiv {
         @include widthheight(40%, 130px);
         @include topleft(10%, -7%);
       }
 
-      h2 {
+      .twoimgseth2 {
         @include topleft(31.5%, 0%);
-
       }
     }
 
@@ -1120,24 +1299,24 @@
       margin: 0 auto;
       padding: 20px 10px;
 
-      h6 {
+      .twoimgsettexth6 {
         @include commoncode(5px, 34px, uppercase, var(--data-color-logo), 500, 16px);
         margin-top: 40px;
       }
 
-      h1 {
+      .twoimgsettexth1 {
         @include commoncode(5px, 55px, uppercase, $text-darkcolor, 600, 43px);
       }
 
-      h2 {
+      .twoimgsettexth2 {
         @include commoncode(5px, 55px, uppercase, var(--data-color-logo), 600, 43px);
       }
 
-      h3 {
+      .twoimgsettexth3 {
         @include commoncode(5px, 55px, uppercase, var(--data-color-logo), 300, 43px);
       }
 
-      h5 {
+      .twoimgsettexth5 {
         @include commoncode(2px, 34px, uppercase, $text-darkcolor, 100, 15px);
       }
     }
@@ -1157,1173 +1336,106 @@
         img {
           @include widthheight(100%, 100%);
           top: 9%;
-          right: 4%;
+          right: 6%;
         }
       }
     }
   }
 
   .mainnavlinkdiv2 {
-    margin-left: 90px;
+    margin-left: 15px;
+  }
+
+  .carouselbg {
+    @include widthheight(100%, 900px);
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 58%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 18px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 15px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 37%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 18px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 15px);
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .mainnavlinkdiv2 {
+    margin-left: 180px;
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 50%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 33%);
+
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .mainnavlinkdiv2 {
     margin-left: 250px;
   }
-}
 
-// -------------------------ABOUT PAGE----------------------------------
-// ---------------------------------------------------------------------
-// ---------------------------------------------------------------------
-// 11111111111111................
-.bgimg {
-  background-image: url("./../public/bgimg.avif");
-  width: 100%;
-  min-height: 900px;
-  @include flexcenter;
-  position: relative;
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 45%);
 
-  .bgimg2 {
-    background-color: rgba($black-color, 0.43);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 900px;
-
-    div {
-      width: 100%;
-      min-height: 900px;
-      @include flexcenter;
-      flex-direction: column;
-    }
-  }
-}
-
-// 22222222222222................
-.twosecmaindiv {
-  width: 100%;
-
-  div {
-    div {
-      position: relative;
-
-      .twosecfirstdiv {
-        @include widthheight(100%, 400px);
-
-        div {
-          @include widthheight(90%, 300px);
-          background-image: linear-gradient(var(--data-color-darkcolor), var(--data-color-lightcolor), #f6f669d9);
-          background-color: rgba($black-color, 0.5);
-          clip-path: polygon(8% 5%, 0 100%, 19% 99%);
-          position: absolute;
-          bottom: 0px;
-        }
-
-        h1 {
-          background-color: var(--data-color-logo);
-          clip-path: polygon(5% 0, 89% 6%, 100% 100%, 9% 99.5%);
-          position: absolute;
-          bottom: 0px;
-        }
-
-        img {
-          height: 400px;
-          position: absolute;
-        }
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
       }
 
-      .twosecseconddiv {
-        margin-top: 50px;
-
-        h6 {
-          font-size: 20px;
-          color: $text-darkcolor;
-        }
-
-        h1 {
-          @include Fsizeweight(55px, 600);
-          letter-spacing: 3px;
-        }
-
-        h2 {
-          @include Fsizeweight(50px, 600);
-          letter-spacing: 3px;
-        }
-
-        p {
-          @include Fsizeweight(20px, auto);
-          color: $text-lightcolor;
-        }
-
-        h4 {
-          color: $text-darkcolor;
-        }
-
-        div {
-          div {
-            display: flex;
-            flex-direction: row;
-
-            a:first-child,
-            a:last-child {
-              @include flexcenter;
-              @include twosecmaindiv;
-              @include widthheight(60px, 60px);
-              background-color: $white-color;
-              color: $black-color;
-
-              &:hover {
-                background-color: rgb(130, 130, 247);
-                color: $white-color;
-              }
-            }
-
-            a {
-              @include flexcenter;
-              @include twosecmaindiv;
-              @include widthheight(60px, 60px);
-              background-color: rgb(130, 130, 247);
-              color: $white-color;
-
-              &:hover {
-                background-color: $white-color;
-                color: $black-color;
-              }
-            }
-          }
-
-          span {
-            display: flex;
-
-            h1:first-child {
-              @include flexcenter;
-              @include twosecmaindiv2;
-              @include widthheight(90px, 90px);
-              border: 3px solid var(--data-color-logo);
-              background-color: $white-color;
-              color: $black-color;
-            }
-
-            h1 {
-              @include flexcenter;
-              @include twosecmaindiv2;
-              @include widthheight(80px, 80px);
-              background-color: var(--data-color-logo);
-              color: $white-color;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// 3333333333333...........
-.foursecmaindiv {
-  background-color: $black-color;
-  @include flexcenter;
-  position: relative;
-
-  .setdivvv {
-    background-color: rgba($white-color, 0.775);
-    padding: 20px;
-    height: 150px;
-    display: flex;
-    border-radius: 30px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-
-    div {
-      @include flexcenter;
-      flex-direction: column;
-
-      h3 {
-        color: $white-color;
-        font-family: 'Times New Roman', Times, serif;
-      }
-
-      a {
-        color: var(--data-color-logo);
-        text-decoration: underline;
-        font-weight: 600;
-        font-family: 'Times New Roman', Times, serif;
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
       }
     }
 
-    img {
-      position: absolute;
-      @include widthheight(248px, 166%);
-      @include bottomright(0px, -52px);
-    }
+    .posi3 {
+      @include topleft(35%, 30%);
 
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-// 444444444................
-.aboutblackbgimg {
-  width: 100%;
-
-  .blackmain {
-    text-align: center;
-    padding-top: 50px;
-
-    h1 {
-      color: $black-color;
-      @include Fsizeweight(45px, bold);
-      font-family: Oswald, sans-serif;
-      letter-spacing: 5px;
-
-      span {
-        color: var(--data-color-logo);
-        font-weight: 300;
-      }
-    }
-
-    h6 {
-      letter-spacing: 7px;
-      padding-bottom: 40px;
-      @include threeimage($black-color, 40px, auto, 15px);
-    }
-  }
-
-  .blackthreeimg {
-    background-color: $white-color;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    div {
-      position: relative;
-      cursor: pointer;
-
-      img {
-        @include widthheight(100%, 100%);
+      .posih4 {
+        @include numberposi2(0px, var(--data-color-logo), 21px);
       }
 
-      h2 {
-        transition: all 0.5s ease-in-out !important;
-        opacity: 0;
-        position: absolute;
-        @include topleft(50%, 50%);
-        transform: translate(-50%, -50%);
-        @include flexcenter;
-        background-color: var(--data-color-lightcolor);
-        @include widthheight(30%, 30%);
-      }
-
-      a {
-        position: absolute;
-        @include topleft(50%, 50%);
-        transform: translate(-50%, -50%);
-        font-size: 45px;
-        background-color: white;
-        color: rgba(0, 0, 0, 0.819);
-        @include widthheight(100px, 100px);
-        border-radius: 50%;
-        outline: 2px solid var(--data-color-logo);
-        outline-offset: -10px;
-        @include flexcenter;
-        opacity: 0;
-      }
-
-      &:hover h2 {
-        @include widthheight(95%, 95%);
-        margin: 0 auto;
-        opacity: 1;
-        background-color: var(--data-color-lightcolor);
-      }
-
-      &:hover a {
-        opacity: 1;
-      }
-    }
-
-    h3 {
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: all 0.5s ease-in-out;
-      cursor: pointer;
-
-      &:hover {
-        color: var(--data-color-logo);
-      }
-    }
-
-    h6 {
-      font-size: 13px;
-    }
-  }
-}
-
-// -------------------------------------------------------------------- ABOUT RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .bgimg {
-    .text1 {
-      @include textcode(35px, $white-color, 700, 1px);
-    }
-
-    .text2 {
-      @include textcode(35px, var(--data-color-logo), 600, 1px);
-    }
-  }
-
-  .foursecmaindiv {
-    @include widthheight(100%, 1100px);
-  }
-
-  .twosecmaindiv {
-    div {
-      div {
-        .twosecfirstdiv {
-          h1 {
-            @include widthheight(320px, 300px);
-            left: -2.5%;
-          }
-
-          img {
-            @include topleft(0, -33px);
-          }
-        }
-
-        .twosecseconddiv {
-          div {
-            @include flexcenter;
-            flex-direction: column;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .bgimg {
-    .text1 {
-      @include textcode(70px, $white-color, 700, 1px);
-    }
-
-    .text2 {
-      @include textcode(70px, var(--data-color-logo), 400, 2px);
-    }
-  }
-
-  .foursecmaindiv {
-    @include widthheight(100%, 600px);
-  }
-
-  .twosecmaindiv {
-    div {
-      div {
-        .twosecfirstdiv {
-          h1 {
-            @include widthheight(475px, 300px);
-            left: 1%;
-          }
-
-          img {
-            @include topleft(0, 30px);
-          }
-        }
-
-        .twosecseconddiv {
-          div {
-            display: flex;
-            justify-content: space-around;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 991.98px) {
-  .foursecmaindiv {
-    @include widthheight(100%, 500px);
-  }
-}
-
-// -------------------------PROJECT PAGE------------------------------
-// ---------------------------------------------------------------------
-// ---------------------------------------------------------------------
-// 2222222222...............
-.Pfixedimg {
-  background-image: url("./../public/Pfixedimg.jpg");
-  background-attachment: fixed;
-  background-position: center 60px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  .Pfixedimg2 {
-    @include flexcenter;
-    @include widthheight(100%, 100%);
-    position: absolute;
-    top: 0;
-    background-color: rgba($black-color, 0.686);
-
-    h6 {
-      color: var(--data-color-logo);
-    }
-
-    h1 {
-      color: $white-color;
-      line-height: 50px;
-    }
-
-    p {
-      line-height: 25px;
-      color: $white-color;
-      @include Fsizeweight(17px, 100);
-      color: rgba($white-color, 0.814);
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .Psec {
-      div {
-        img {
-          margin-right: 10px;
-        }
-
-        h5 {
-          color: $white-color;
-          transition: all 0.5s ease-in-out;
-
-          &:hover {
-            color: var(--data-color-logo);
-          }
-        }
-
-        h6 {
-          color: rgba($white-color, 0.814);
-        }
-
-        p {
-          color: $black-color;
-
-          a {
-            color: var(--data-color-logo);
-          }
-        }
-      }
-    }
-  }
-}
-
-// 33333333333............
-.sixmaindiv {
-  text-align: center;
-  margin: 100px 0px;
-
-  h1 {
-    color: $text-darkcolor;
-    @include Fsizeweight(45px, bold);
-    font-family: Oswald, sans-serif;
-
-    span {
-      color: var(--data-color-logo);
-      font-weight: 300;
-    }
-  }
-
-  h6 {
-    font-size: 15px;
-    color: $text-lightcolor;
-    font-family: Oswald, sans-serif;
-  }
-}
-
-.threediv {
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .subthreediv {
-    height: 51%;
-    object-fit: contain;
-    object-position: center center
-  }
-
-  .sssubthreediv {
-    @include subthreedivmid(44%);
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: var(--data-color-logo);
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .subthreedivmid {
-    @include subthreedivmid(44%);
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: var(--data-color-logo);
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .sssubthreedivmid {
-    height: 51%;
-  }
-}
-
-// -------------------------------------------------------------------- PROJECT RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .Pfixedimg {
-    @include widthheight(100%, 1200px);
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .Pfixedimg {
-    @include widthheight(100%, 800px);
-  }
-}
-
-@media only screen and (min-width: 991.98px) {
-  .Pfixedimg {
-    @include widthheight(100%, 600px);
-  }
-}
-
-// -------------------------SERVICE PAGE------------------------------
-// ---------------------------------------------------------------------
-// ---------------------------------------------------------------------
-// 222222222222222.........
-.saccormaindiv {
-  .saccorimage {
-    background-image: url("./../public/bgi4.jpg");
-    @include background(cover);
-    position: relative;
-
-    .saccorimage2 {
-      position: absolute;
-      background-image: url("./../public/bgi9.jpg");
-      @include background(cover);
-    }
-
-    .saccorimage3 {
-      position: absolute;
-
-      h6 {
-        @include threeimage(var(--data-color-logo), 40px, 100, 13px);
-        letter-spacing: 7px;
-      }
-
-      h1 {
-        span {
-          font-weight: 100;
-        }
-      }
-    }
-  }
-}
-
-// 222222222222222222.............
-.Smaindiv {
-  margin-top: 100px;
-
-  .Simg1 {
-    background-image: url("./../public/s3.webp");
-    @include background(cover);
-    margin: 0 auto;
-    position: relative;
-
-    .Simg2 {
-      background-image: url("./../public/s8.webp");
-      @include background(cover);
-      position: absolute;
-    }
-
-    .Simg3 {
-      background-image: url("./../public/A-6.webp");
-      @include background(cover);
-      position: absolute;
-    }
-  }
-
-  .Saccorsec {
-    flex-direction: column;
-
-    h6 {
-      letter-spacing: 7px;
-    }
-
-    h1 {
-      span {
-        font-weight: 100;
-      }
-    }
-  }
-}
-
-// 33333333333333333............
-.Sthreeimg {
-  background-image: url("./../public/mainimg3.jpg");
-  @include background(cover);
-  @include flexcenter;
-
-  h1 {
-    font-size: 60px;
-    -webkit-text-stroke: 1px rgba($text-lightcolor, 0.2);
-    color: transparent;
-  }
-
-  h2 {
-    @include threeimage($text-darkcolor, 40px, 600, 25px);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--data-color-logo)
-    }
-  }
-
-  h6 {
-    @include threeimage($text-lightcolor, 20px, 100, 15px);
-  }
-}
-
-// 5555555555555555555.............
-.STwobgsecdiv {
-  @include widthheight(100%, 700px);
-
-  .Stwobg1 {
-    background-image: url("./../public/Simg2.png");
-    @include background(cover);
-    position: relative;
-
-    h1 {
-      background-image: url("./../public/shortimg1.png");
-      @include background(cover);
-      position: absolute;
-    }
-
-    h2 {
-      position: absolute;
-      clip-path: polygon(52% 31%, 84% 37%, 101% 80%, 35% 121%, 15% 75%);
-      background-color: rgba($black-color, 0.381);
-    }
-  }
-
-  .Stwobg2 {
-    background-color: rgba($black-color, 0.9);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    h1 {
-      -webkit-text-stroke: 1px rgba($white-color, 0.4);
-      color: transparent;
-    }
-
-    h2 {
-      color: $white-color;
-      font-weight: 600;
-    }
-  }
-}
-
-// -------------------------------------------------------------------- SERVICE RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .saccormaindiv {
-    @include widthheight(85%, 1500px);
-    padding-top: 150px;
-
-    .saccorimage {
-      @include widthheight(100%, 600px);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include widthheight(70%, 90%);
-        @include topleft(20%, -15%);
-      }
-
-      .saccorimage3 {
-        @include topleft(120%, 0%);
-        padding: 60px 0px 60px 0px;
-
-        h1 {
-          @include threeimage($text-darkcolor, 60px, bold, 30px);
-          letter-spacing: 4px;
-        }
-      }
-    }
-  }
-
-  .Smaindiv {
-    @include widthheight(100%, 1200px);
-
-    .Simg1 {
-      @include widthheight(100%, 450px);
-
-      .Simg2 {
-        @include widthheight(317px, 427px);
-        @include bottomright(-34%, 26%);
-      }
-
-      .Simg3 {
-        @include widthheight(291px, 300px);
-        @include topleft(73%, 31%);
-      }
-    }
-
-    .Saccorsec {
-      padding: 200px 10px 20px 10px;
-
-      h1 {
-        @include threeimage($text-darkcolor, 47px, bold, 30px);
-        letter-spacing: 4px;
-      }
-
-      h6 {
-        @include threeimage(var(--data-color-logo), 60px, 100, 13px);
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheight(100%, 2160px);
-  }
-
-  .STwobgsecdiv {
-    @include widthheight(100%, 1400px);
-
-    .Stwobg1 {
-      @include widthheight(100%, 700px);
-
-      h1 {
-        @include widthheight(50%, 169px);
-        bottom: 0px;
-        right: 0px;
-        transform: rotate(340deg);
-      }
-    }
-
-    .Stwobg2 {
-      @include widthheight(100%, 700px);
-
-      h1 {
-        font-size: 40px;
-        padding-left: 25px;
-      }
-
-      h2 {
-        padding-left: 20px;
-        font-size: 40px;
-        line-height: 60px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .saccormaindiv {
-    @include widthheight(85%, 1800px);
-    padding-top: 150px;
-
-    .saccorimage {
-      @include widthheight(100%, 900px);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include widthheight(70%, 90%);
-        @include topleft(20%, -18%);
-      }
-
-      .saccorimage3 {
-        @include topleft(120%, 0%);
-        padding: 60px 0px 60px 0px;
-
-        h1 {
-          @include threeimage($text-darkcolor, 60px, bold, 30px);
-          letter-spacing: 4px;
-        }
-      }
-    }
-  }
-
-  .Smaindiv {
-    @include widthheight(100%, 1100px);
-
-    .Simg1 {
-      @include widthheight(342px, 450px);
-
-      .Simg2 {
-        @include widthheight(317px, 486px);
-        @include bottomright(-49%, 60%);
-      }
-
-      .Simg3 {
-        @include widthheight(350px, 358px);
-        @include topleft(55%, 40%);
-      }
-    }
-
-    .Saccorsec {
-      padding: 230px 10px 20px 70px;
-
-      h1 {
-        @include threeimage($text-darkcolor, 47px, bold, 37px);
-        letter-spacing: 4px;
-      }
-
-      h6 {
-        @include threeimage(var(--data-color-logo), 60px, 100, 13px);
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheight(100%, 1100px);
-    margin-top: 50px
-  }
-
-  .STwobgsecdiv {
-    @include widthheight(100%, 1400px);
-
-    .Stwobg1 {
-      @include widthheight(100%, 700px);
-
-      h1 {
-        @include widthheight(31%, 200px);
-        @include bottomright(32px, 34px);
-        transform: rotate(340deg);
-      }
-    }
-
-    .Stwobg2 {
-      @include widthheight(100%, 700px);
-
-      h3 {
-        position: relative;
-        padding-left: 160px;
-        text-align: end;
-
-        &::before {
-          content: "";
-          position: absolute;
-          @include topleft(40px, 70px);
-          @include widthheight(40%, 3px);
-          background-color: $white-color;
-        }
-      }
-
-      h1 {
-        font-size: 60px;
-      }
-
-      h2 {
-        padding-left: 60px;
-        font-size: 60px;
-        line-height: 80px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 991.98px) {
-  .saccormaindiv {
-    @include widthheight(50%, 900px);
-    padding-top: 150px;
-    margin-bottom: 200px;
-
-    .saccorimage {
-      @include widthheight(70%, 700px);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include widthheight(70%, 90%);
-        @include topleft(25%, -18%);
-      }
-
-      .saccorimage3 {
-        width: 600px;
-        @include topleft(0%, 120%);
-
-        h1 {
-          @include threeimage($text-darkcolor, 60px, bold, 50px);
-          letter-spacing: 7px;
-        }
-      }
-    }
-  }
-
-  .Smaindiv {
-    @include widthheight(100%, 700px);
-
-    .Simg1 {
-      @include widthheight(342px, 450px);
-
-      .Simg2 {
-        @include widthheight(317px, 486px);
-        @include bottomright(-49%, 60%);
-      }
-
-      .Simg3 {
-        @include widthheight(350px, 358px);
-        @include topleft(55%, 40%);
-      }
-    }
-
-    .Saccorsec {
-      padding: 50px 10px 20px 70px;
-
-      h1 {
-        @include threeimage($text-darkcolor, 47px, bold, 37px);
-        letter-spacing: 4px;
-      }
-
-      h6 {
-        @include threeimage(var(--data-color-logo), 60px, 100, 13px);
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheight(100%, 800px);
-    margin-top: 75px;
-    padding-top: 150px
-  }
-
-  .STwobgsecdiv {
-    @include widthheight(100%, 750px);
-
-    .Stwobg1 {
-      @include widthheight(100%, 700px);
-
-      h1 {
-        @include widthheight(35%, 254px);
-        bottom: 0px;
-        right: 0px;
-        transform: rotate(340deg);
-      }
-    }
-
-    .Stwobg2 {
-      @include widthheight(100%, 700px);
-
-      h3 {
-        position: relative;
-        padding-left: 140px;
-        text-align: end;
-
-        &::before {
-          content: "";
-          position: absolute;
-          @include topleft(40px, 50px);
-          @include widthheight(40%, 3px);
-          background-color: $white-color;
-        }
-      }
-
-      h1 {
-        font-size: 55px;
-      }
-
-      h2 {
-        padding-left: 50px;
-        font-size: 60px;
-        line-height: 80px;
-      }
-    }
-  }
-}
-
-// --------------------BLOG PAGE-------------------------
-// ---------------------------------------------------------
-// ---------------------------------------------------------
-.Bmaindiv {
-  margin-top: 150px;
-
-  h2 {
-    color: $text-darkcolor;
-    padding: 20px 0px;
-    font-family: Oswald, sans-serif;
-  }
-
-  div {
-    h6 {
-      color: $text-lightcolor;
-      font-family: Oswald, sans-serif;
-      line-height: 20px;
-    }
-  }
-
-  p {
-    padding-top: 20px;
-    color: $text-lightcolor;
-    font-family: Oswald, sans-serif;
-  }
-
-  a {
-    color: var(--data-color-logo);
-    letter-spacing: 7px;
-  }
-
-  h1 {
-    color: $text-darkcolor;
-    font-weight: 700;
-    padding: 30px 0px;
-    font-family: Oswald, sans-serif;
-  }
-
-  div {
-    a {
-      h5 {
-        @include threeimage($text-darkcolor, 40px, 500, 19px);
-        letter-spacing: 0px;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-          color: var(--data-color-logo);
-        }
-      }
-    }
-  }
-
-  input {
-    border: 2px solid rgba($text-lightcolor, 0.3);
-    margin-bottom: 20px;
-    padding: 15px;
-    width: 100%;
-  }
-
-  button {
-    letter-spacing: 3px;
-    min-width: 130px;
-    padding: 12px;
-    background: var(--data-color-logo);
-    border: none;
-    color: $white-color;
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-
-    &:hover {
-      background-color: $text-darkcolor;
-    }
-  }
-}
-
-// --------------------------------------------------------------------BLOG RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .sidediv {
-    margin-top: 610px;
-  }
-}
-
-@media only screen and (min-width: 991px) {
-  .Bmaindiv {
-    margin-bottom: 200px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .Bmaindiv {
-    margin-bottom: 0px;
-  }
-}
-
-// --------------------CONTACT PAGE-------------------------
-// ---------------------------------------------------------
-// ---------------------------------------------------------
-
-// 3333333333333............
-.Cthreemaindiv {
-  .Cthreediv1 {
-    position: relative;
-    background-color: $white-color;
-    @include widthheight(100%, 400px);
-    box-shadow: rgba($black-color, 0.25) 0px 5px 15px;
-    @include flexcenter;
-    flex-direction: column;
-
-    img {
-      transition: all 0.5s ease-in-out;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-
-    h5 {
-      color: var(--data-color-darkcolor);
-      text-decoration: underline;
-    }
-  }
-}
-
-// -------------------------------------------------------------------- CONTACT RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .Cthreemaindiv {
-    @include widthheight(100%, 1300px);
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .Cthreemaindiv {
-    @include widthheight(100%, 900px);
-  }
-}
-
-@media only screen and (min-width: 991px) {
-  .Cthreemaindiv {
-    @include widthheight(100%, 400px);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .Cthreemaindiv {
-    @include widthheight(100%, 400px);
-
-    .Cthreediv1 {
-      .Cthreediv2 {
-        @include widthheight(100%, 24%);
-        @include topleft(38%, -38%);
-        @include flexcenter;
-        @include Cthreediv23(rgba($black-color, 0.043), rotate(90deg));
-
-        h6 {
-          color: $text-lightcolor;
-          font-family: Oswald, sans-serif;
-        }
-      }
-
-      .Cthreediv3 {
-        @include widthheight(100%, 24%);
-        @include topleft(38%, 38.3%);
-        @include flexcenter;
-        @include Cthreediv23(rgba($black-color, 0.1), rotate(270deg));
-
-        h6 {
-          color: $text-lightcolor;
-          font-family: Oswald, sans-serif;
-        }
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
       }
     }
   }
@@ -2337,7 +1449,7 @@
   @include widthheight(100%, 950px);
   margin: 0 auto;
 
-  h2 {
+  .loginmaindiv2 {
     background-image: radial-gradient(rgba(106, 100, 100, 0.5), rgba(23, 19, 19, 0.5));
     outline: 60px solid var(--data-color-darkcolor);
     outline-offset: -10%;
@@ -2405,7 +1517,7 @@
         }
       }
 
-      h6 {
+      p {
         color: $white-color;
         font-weight: normal;
       }

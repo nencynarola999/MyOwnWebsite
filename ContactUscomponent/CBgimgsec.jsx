@@ -6,8 +6,8 @@ const CBgimgsec = () => {
             <div className="bgimg">
                 <div className="bgimg2">
                         <div className="container" >
-                            <h1 className="text1">CONTACT PAGE</h1>
-                            <h1 className="text2">UNIQUE AND STYLISH</h1>
+                            <p className="text1">CONTACT PAGE</p>
+                            <p className="text2">UNIQUE AND STYLISH</p>
                         </div>
                 </div>
             </div>

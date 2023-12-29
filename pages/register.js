@@ -26,17 +26,17 @@ const Register = () => {
   return (
     <>
     <Navbar1/>
-    <div className="container-fluid  g-0">
+    <div className="container-fluid  g-0 p-0">
       <div className="loginmaindiv" data-aos="zoom-in"  data-aos-duration="1500">
-        <h2 className="container  g-0">
+        <div className="loginmaindiv2 container  g-0">
           <div className="row">
             <div className="col-3 d-none d-lg-block  p-0">
               <img src="/1.png" alt="" width="100%" />
             </div>
             <div className="col-12 col-lg-9  p-0 m-0 g-0">
               <div className="formset">
-                <h1>Sign in</h1>
-                <h6>Get in securly with an existing online profile</h6><br />
+                <h2 className='fs-1'>Sign in</h2>
+                <p>Get in securly with an existing online profile</p><br />
                 <span className="d-flex">
                 <Link href="https://www.facebook.com/" legacyBehavior><a target="_blank" className="linkset1" ><FaFacebook className='fs-3' /><span className='ms-2'> Log In</span></a></Link>
                     <Link href="https://www.google.com/" legacyBehavior><a target="_blank" className="linkset2"><FaGooglePlus className='fs-3' /> <span className='ms-2'>Google+</span></a></Link>
@@ -96,11 +96,11 @@ const Register = () => {
                     <Button type="submit" className='w-100'>Submit form</Button>
                   </Form>
                 </div><br />
-                <h6>All ready have an account?<span className='text-decoration-underline ms-1 loginlastcolor fs-5'><Link href="/login">Log in</Link></span></h6>
+                <p>All ready have an account?<span className='text-decoration-underline ms-1 loginlastcolor fs-5'><Link href="/login">Log in</Link></span></p>
               </div>
             </div>
           </div>
-        </h2>
+        </div>
       </div>
     </div>
     </>

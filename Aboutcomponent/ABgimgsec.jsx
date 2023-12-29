@@ -1,12 +1,12 @@
 import React from 'react'
-const Bgimgsec = () => {
+const ABgimgsec = () => {
     return (
         <div className="container-fluid g-0">
             <div className="bgimg">
                 <div className="bgimg2">
                         <div className="container" >
-                            <h1 className="text1">ABOUT PAGE</h1>
-                            <h1 className="text2">UNIQUE AND STYLISH</h1>
+                            <p className="text1 mb-0">ABOUT PAGE</p>
+                            <p className="text2 mb-0">UNIQUE AND STYLISH</p>
                         </div>
                 </div>
             </div>
@@ -14,4 +14,4 @@ const Bgimgsec = () => {
     )
 }
 
-export default Bgimgsec
+export default ABgimgsec

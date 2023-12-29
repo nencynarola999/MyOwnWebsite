@@ -7,32 +7,32 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className='container-fluid p-0 mt-5'>
+        <div className='container-fluid p-0 mt-5 g-0'>
             <div className="footerdiv">
-                <div className="container  p-0">
-                    <div className="row g-3">
+                <div className="container  p-0 g-0">
+                    <div className="row g-0">
                         <div className="col-12 col-md-5 col-lg-3 pt-0 pt-md-5">
                             <div className=" p-4 p-md-2 p-lg-0 d-flex justify-content-center  flex-column h-100">
                                 <h5>CONTACT US</h5>
                                 <div className='d-flex'>
                                     <Link href="https://www.google.com/maps" legacyBehavior><a target='_blank'><BiSolidMap /></a></Link>
                                     <div className="linksetdiv">
-                                        <h6><Link href="">NORAURE London Street</Link></h6>
-                                        <h6><Link href="">012 United Kingdom.</Link></h6>
+                                        <p className='mb-1'><Link href="">NORAURE London Street</Link></p>
+                                        <p className='mb-1'><Link href="">012 United Kingdom.</Link></p>
                                     </div>
                                 </div>
                                 <div className='d-flex'>
                                     <Link href="https://workspace.google.com/intl/en_in/lp/gmail-in/?utm_source=google&utm_medium=cpc&utm_campaign=1605214-Workspace-APAC-IN-en-BKWS-EXA-Gmail&utm_content=text-ad-none-none-DEV_c-CRE_608675944729-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt_Gmail_SignIn-KWID_43700074554923851-aud-1589252136926:kwd-416397227487&userloc_9062197-network_g&utm_term=KW_sing%20in%20new%20gmail%20account&gad=1&gclid=Cj0KCQjw0bunBhD9ARIsAAZl0E03tv6mQUxsAPFjNAD9ppCUUK4B2giD5fKCNPUlc_TL7s11zhZ6YWMaAiQyEALw_wcB&gclsrc=aw.ds" legacyBehavior><a target='_blank'><GrMail /></a></Link>
                                     <div className="linksetdiv">
-                                        <h6><Link href="">emailnoraure@gmail.com</Link></h6>
-                                        <h6><Link href="">emailsupport@gmail.com</Link></h6>
+                                        <p className='mb-1'><Link href="">emailnoraure@gmail.com</Link></p>
+                                        <p className='mb-1'><Link href="">emailsupport@gmail.com</Link></p>
                                     </div>
                                 </div>
                                 <div className='d-flex'>
                                     <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><BsFillTelephoneFill /></a></Link>
                                     <div className="linksetdiv">
-                                        <h6><Link href="">(+92) 3456 7890</Link></h6>
-                                        <h6><Link href="">  (+92) 1234 5678 </Link></h6>
+                                        <p className='mb-1'><Link href="">(+92) 3456 7890</Link></p>
+                                        <p className='mb-1'><Link href="">  (+92) 1234 5678 </Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -41,12 +41,12 @@ const Footer = () => {
                             <div className=" p-4 p-md-2 p-lg-0  d-flex justify-content-center  flex-column h-100">
                                 <div className="linksetdiv">
                                     <h5>INFORMATION</h5>
-                                    <h6><Link href="">My account</Link></h6>
-                                    <h6><Link href="">Order history</Link></h6>
-                                    <h6><Link href="">Wish List</Link></h6>
-                                    <h6><Link href="">Returns</Link></h6>
-                                    <h6><Link href="">Privacy Policy</Link></h6>
-                                    <h6><Link href="">Site Map</Link></h6>
+                                    <p className='mb-1'><Link href="">My account</Link></p>
+                                    <p className='mb-1'><Link href="">Order history</Link></p>
+                                    <p className='mb-1'><Link href="">Wish List</Link></p>
+                                    <p className='mb-1'><Link href="">Returns</Link></p>
+                                    <p className='mb-1'><Link href="">Privacy Policy</Link></p>
+                                    <p className='mb-1'><Link href="">Site Map</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -54,12 +54,12 @@ const Footer = () => {
                             <div className=" p-4 p-md-2 p-lg-0 h-100  d-flex justify-content-center  flex-column">
                                 <div className="linksetdiv">
                                     <h5>OUR OFFERS</h5>
-                                    <h6><Link href="">New collection</Link></h6>
-                                    <h6><Link href="">Best sellers</Link></h6>
-                                    <h6><Link href="">Manufacturers</Link></h6>
-                                    <h6><Link href="">New products</Link></h6>
-                                    <h6><Link href="">Suppliers</Link></h6>
-                                    <h6><Link href="">Delivery & returns</Link></h6>
+                                    <p className='mb-1'><Link href="">New collection</Link></p>
+                                    <p className='mb-1'><Link href="">Best sellers</Link></p>
+                                    <p className='mb-1'><Link href="">Manufacturers</Link></p>
+                                    <p className='mb-1'><Link href="">New products</Link></p>
+                                    <p className='mb-1'><Link href="">Suppliers</Link></p>
+                                    <p className='mb-1'><Link href="">Delivery & returns</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -67,12 +67,12 @@ const Footer = () => {
                             <div className="  p-4 p-md-2 p-lg-0 h-100  d-flex justify-content-center  flex-column">
                                 <div className="linksetdiv">
                                     <h5>OUR POLICY</h5>
-                                    <h6><Link href=""> Help & Contact</Link></h6>
-                                    <h6><Link href=""> Shipping & taxes</Link></h6>
-                                    <h6><Link href=""> Returns policy</Link></h6>
-                                    <h6><Link href=""> Careens</Link></h6>
-                                    <h6><Link href=""> Affiliates</Link></h6>
-                                    <h6><Link href=""> Legal Notice</Link></h6>
+                                    <p className='mb-1'><Link href=""> Help & Contact</Link></p>
+                                    <p className='mb-1'><Link href=""> Shipping & taxes</Link></p>
+                                    <p className='mb-1'><Link href=""> Returns policy</Link></p>
+                                    <p className='mb-1'><Link href=""> Careens</Link></p>
+                                    <p className='mb-1'><Link href=""> Affiliates</Link></p>
+                                    <p className='mb-1'><Link href=""> Legal Notice</Link></p>
                                 </div>
                             </div>
                         </div>

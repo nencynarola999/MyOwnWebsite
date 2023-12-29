@@ -1,0 +1,180 @@
+@import './Var';
+@import './Mixin.module';
+
+
+
+// -------------------------PROJECT PAGE------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// 2222222222...............
+.Pfixedimg {
+    background-image: url("./../public/Pfixedimg.jpg");
+    background-attachment: fixed;
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .Pfixedimg2 {
+        @include flexcenter;
+        @include widthheight(100%, 100%);
+        position: absolute;
+        top: 0;
+        background-color: rgba($black-color, 0.686);
+
+        h6 {
+            color: var(--data-color-logo);
+        }
+
+        h1 {
+            color: $white-color;
+            line-height: 50px;
+        }
+
+        p {
+            line-height: 25px;
+            color: $white-color;
+            @include Fsizeweight(17px, 100);
+            color: rgba($white-color, 0.814);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .Psec {
+            div {
+                img {
+                    margin-right: 10px;
+                }
+
+                h5 {
+                    color: $white-color;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        color: var(--data-color-logo);
+                    }
+                }
+
+                h6 {
+                    color: rgba($white-color, 0.814);
+                }
+
+                p {
+                    color: $black-color;
+
+                    a {
+                        color: var(--data-color-logo);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 33333333333............
+.sixmaindiv {
+    text-align: center;
+    margin: 100px 0px;
+
+    h1 {
+        color: $text-darkcolor;
+        @include Fsizeweight(45px, bold);
+        font-family: Oswald, sans-serif;
+
+        span {
+            color: var(--data-color-logo);
+            font-weight: 300;
+        }
+    }
+
+    h6 {
+        font-size: 15px;
+        color: $text-lightcolor;
+        font-family: Oswald, sans-serif;
+    }
+}
+
+.threediv {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .subthreediv {
+        height: 51%;
+        object-fit: contain;
+        object-position: center center
+    }
+
+    .sssubthreediv {
+        @include subthreedivmid(44%);
+
+        h2 {
+            @include sixbgh1code;
+
+            &:hover {
+                color: var(--data-color-logo);
+            }
+        }
+
+        h5 {
+            @include sixbgh5code;
+        }
+
+        h6 {
+            @include sixbgh6code;
+        }
+    }
+
+    .subthreedivmid {
+        @include subthreedivmid(44%);
+
+        h1 {
+            @include sixbgh1code;
+
+            &:hover {
+                color: var(--data-color-logo);
+            }
+        }
+
+        h5 {
+            @include sixbgh5code;
+        }
+
+        h6 {
+            @include sixbgh6code;
+        }
+    }
+
+    .sssubthreedivmid {
+        height: 51%;
+    }
+}
+
+// -------------------------------------------------------------------- PROJECT RESPONSIVE
+@media only screen and (max-width: 345.98px) {}
+
+@media only screen and ((min-width: 350px) and (max-width: 380px)) {}
+
+@media only screen and (max-width: 575.98px) {
+    .Pfixedimg {
+        @include widthheight(100%, 1200px);
+    }
+}
+
+@media only screen and (min-width: 575.98px) {
+    .Pfixedimg {
+        @include widthheight(100%, 1200px);
+    }
+}
+
+@media only screen and (min-width: 767.98px) {
+    .Pfixedimg {
+        @include widthheight(100%, 800px);
+    }
+}
+
+@media only screen and (min-width: 991.98px) {
+    .Pfixedimg {
+        @include widthheight(100%, 600px);
+    }
+}

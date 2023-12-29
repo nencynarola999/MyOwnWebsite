@@ -50,64 +50,49 @@ const Slidersec = () => {
             }
         ]
     }
+    let array = [
+        {
+            img: "/s1.webp"
+        },
+        {
+            img: "/s2.webp"
+        },
+        {
+            img: "/s3.webp"
+        },
+        {
+            img: "/s4.webp"
+        },
+        {
+            img: "/s5.webp"
+        },
+        {
+            img: "/s7.webp"
+        },
+        {
+            img: "/s8.webp"
+        },
+    ]
     return (
-        <div className='container-fluid p-0' >
+        <div className='container-fluid p-0 g-0' >
             <div className="slidermain">
 
-                <div className="container">
+                <div className="container px-3 px-md-0 g-0">
                     <div className="slidertextwritten">
-                        <h1>All PRODUCTS</h1>
-                        <h6> ipsum, dolor sit amet consectetur adipisicing elit Libero accusantium cuipsum dolor maiores ex</h6>
+                        <h2>All PRODUCTS</h2>
+                        <p> ipsum, dolor sit amet consectetur adipisicing elit Libero accusantium cuipsum dolor maiores ex</p>
                     </div>
                     <Slider {...settings} className='w-100 '>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-                            </div>
-                            <img src="/s1.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s2.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s3.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s4.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s5.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s7.webp" alt="" max-width="100%" />
-                        </div>
-                        <div className="immm" data-aos="flip-down" data-aos-duration="1500">
-                            <div max-width="100%">
-                                <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
-
-                            </div>
-                            <img src="/s8.webp" alt="" max-width="100%" />
-                        </div>
+                        {
+                            array?.map((x, i) => {
+                                return <div className="immm" data-aos="flip-down" data-aos-duration="1500" key={i}>
+                                    <div max-width="100%">
+                                        <Link href="https://www.instagram.com/" legacyBehavior><a target='_blank'><FaInstagram /></a></Link>
+                                    </div>
+                                    <img src={x?.img} alt="" max-width="100%" />
+                                </div>
+                            })
+                        }
                     </Slider>
                 </div>
             </div>

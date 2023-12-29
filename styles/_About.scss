@@ -1,0 +1,405 @@
+@import './Var';
+@import './Mixin.module';
+
+// -------------------------ABOUT PAGE----------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// 11111111111111................
+.bgimg {
+    background-image: url("./../public/bgimg.avif");
+    width: 100%;
+    min-height: 900px;
+    @include flexcenter;
+    position: relative;
+
+    .bgimg2 {
+        background-color: rgba($black-color, 0.43);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        min-height: 900px;
+
+        div {
+            width: 100%;
+            min-height: 900px;
+            @include flexcenter;
+            flex-direction: column;
+        }
+    }
+}
+
+// 22222222222222................
+.twosecmaindiv {
+    width: 100%;
+
+    div {
+        div {
+            position: relative;
+
+            .twosecfirstdiv {
+                @include widthheight(100%, 400px);
+
+                div {
+                    @include widthheight(90%, 300px);
+                    background-image: linear-gradient(var(--data-color-darkcolor), var(--data-color-lightcolor), #f6f669d9);
+                    background-color: rgba($black-color, 0.5);
+                    clip-path: polygon(8% 5%, 0 100%, 19% 99%);
+                    position: absolute;
+                    bottom: 0px;
+                }
+
+                p {
+                    background-color: var(--data-color-logo);
+                    clip-path: polygon(5% 0, 89% 6%, 100% 100%, 9% 99.5%);
+                    position: absolute;
+                    bottom: 0px;
+                }
+
+                img {
+                    height: 400px;
+                    position: absolute;
+                }
+            }
+
+            .twosecseconddiv {
+                margin-top: 50px;
+
+                .twosecseconddivh6 {
+                    font-size: 20px;
+                    color: $text-darkcolor;
+                }
+
+                .twosecseconddivh1 {
+                    @include Fsizeweight(55px, 600);
+                    letter-spacing: 3px;
+                }
+
+                .twosecseconddivh2 {
+                    @include Fsizeweight(50px, 600);
+                    letter-spacing: 3px;
+                }
+
+                .twosecseconddivp {
+                    @include Fsizeweight(20px, auto);
+                    color: $text-lightcolor;
+                }
+
+                .twosecseconddivh4 {
+                    color: $text-darkcolor;
+                }
+
+                div {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+
+                        a:first-child,
+                        a:last-child {
+                            @include flexcenter;
+                            @include twosecmaindiv;
+                            @include widthheight(60px, 60px);
+                            background-color: $white-color;
+                            color: $black-color;
+
+                            &:hover {
+                                background-color: rgb(130, 130, 247);
+                                color: $white-color;
+                            }
+                        }
+
+                        a {
+                            @include flexcenter;
+                            @include twosecmaindiv;
+                            @include widthheight(60px, 60px);
+                            background-color: rgb(130, 130, 247);
+                            color: $white-color;
+
+                            &:hover {
+                                background-color: $white-color;
+                                color: $black-color;
+                            }
+                        }
+                    }
+
+                    span {
+                        display: flex;
+
+                        .twosecseconddiv50k:first-child {
+                            @include flexcenter;
+                            @include twosecmaindiv2;
+                            @include widthheight(90px, 90px);
+                            border: 3px solid var(--data-color-logo);
+                            background-color: $white-color;
+                            color: $black-color;
+                        }
+
+                        .twosecseconddiv8k {
+                            @include flexcenter;
+                            @include twosecmaindiv2;
+                            @include widthheight(80px, 80px);
+                            background-color: var(--data-color-logo);
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 3333333333333...........
+.foursecmaindiv {
+    background-color: $black-color;
+    @include flexcenter;
+    position: relative;
+
+    .setdivvv {
+        background-color: rgba($white-color, 0.775);
+        padding: 20px;
+        height: 150px;
+        display: flex;
+        border-radius: 30px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+
+        div {
+            @include flexcenter;
+            flex-direction: column;
+
+            h3 {
+                color: $white-color;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            a {
+                color: var(--data-color-logo);
+                text-decoration: underline;
+                font-weight: 600;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+
+        img {
+            position: absolute;
+            @include widthheight(248px, 166%);
+            @include bottomright(0px, -52px);
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// 444444444................
+.aboutblackbgimg {
+    width: 100%;
+
+    .blackmain {
+        text-align: center;
+        padding-top: 50px;
+
+        h2 {
+            color: $black-color;
+            @include Fsizeweight(45px, bold);
+            font-family: Oswald, sans-serif;
+            letter-spacing: 5px;
+
+            span {
+                color: var(--data-color-logo);
+                font-weight: 300;
+            }
+        }
+
+        p {
+            letter-spacing: 7px;
+            padding-bottom: 40px;
+            @include threeimage($black-color, 40px, auto, 15px);
+        }
+    }
+
+    .blackthreeimg {
+        background-color: $white-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        div {
+            position: relative;
+            cursor: pointer;
+
+            img {
+                @include widthheight(100%, 100%);
+            }
+
+            h2 {
+                transition: all 0.5s ease-in-out !important;
+                opacity: 0;
+                position: absolute;
+                @include topleft(50%, 50%);
+                transform: translate(-50%, -50%);
+                @include flexcenter;
+                background-color: var(--data-color-lightcolor);
+                @include widthheight(30%, 30%);
+            }
+
+            a {
+                position: absolute;
+                @include topleft(50%, 50%);
+                transform: translate(-50%, -50%);
+                font-size: 45px;
+                background-color: white;
+                color: rgba(0, 0, 0, 0.819);
+                @include widthheight(100px, 100px);
+                border-radius: 50%;
+                outline: 2px solid var(--data-color-logo);
+                outline-offset: -10px;
+                @include flexcenter;
+                opacity: 0;
+            }
+
+            &:hover h2 {
+                @include widthheight(95%, 95%);
+                margin: 0 auto;
+                opacity: 1;
+                background-color: var(--data-color-lightcolor);
+            }
+
+            &:hover a {
+                opacity: 1;
+            }
+        }
+
+        h3 {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--data-color-logo);
+            }
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+// -------------------------------------------------------------------- ABOUT RESPONSIVE
+@media only screen and (max-width: 345.98px) {}
+
+@media only screen and ((min-width: 350px) and (max-width: 380px)) {}
+
+@media only screen and (max-width: 575.98px) {
+    .bgimg {
+        .text1 {
+            @include textcode(35px, $white-color, 700, 1px);
+        }
+
+        .text2 {
+            @include textcode(35px, var(--data-color-logo), 600, 1px);
+        }
+    }
+
+    .twosecmaindiv {
+        div {
+            div {
+                .twosecfirstdiv {
+                    p {
+                        @include widthheight(320px, 300px);
+                        left: -2.5%;
+                    }
+
+                    img {
+                        @include topleft(0, -33px);
+                    }
+                }
+
+                .twosecseconddiv {
+                    div {
+                        @include flexcenter;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 575.98px) {
+    .bgimg {
+        .text1 {
+            @include textcode(70px, $white-color, 700, 1px);
+        }
+
+        .text2 {
+            @include textcode(70px, var(--data-color-logo), 400, 2px);
+        }
+    }
+
+    .twosecmaindiv {
+        div {
+            div {
+                .twosecfirstdiv {
+                    p {
+                        @include widthheight(475px, 300px);
+                        left: 1%;
+                    }
+
+                    img {
+                        @include topleft(0, 30px);
+                    }
+                }
+
+                .twosecseconddiv {
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 767.98px) {
+    .bgimg {
+        .text1 {
+            @include textcode(70px, $white-color, 700, 1px);
+        }
+
+        .text2 {
+            @include textcode(70px, var(--data-color-logo), 400, 2px);
+        }
+    }
+
+    .twosecmaindiv {
+        div {
+            div {
+                .twosecfirstdiv {
+                    p {
+                        @include widthheight(475px, 300px);
+                        left: 1%;
+                    }
+
+                    img {
+                        @include topleft(0, 30px);
+                    }
+                }
+
+                .twosecseconddiv {
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991.98px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1400px) {}
