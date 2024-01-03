@@ -35,5 +35,4 @@ const Backgroundsec = () => {
         </>
     )
 }
-
 export default Backgroundsec

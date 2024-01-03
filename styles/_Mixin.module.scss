@@ -22,7 +22,6 @@
     font-size: $fsize;
     font-family: Oswald, sans-serif;
 }
-
 @mixin topleft($top, $left) {
     top: $top;
     left: $left;

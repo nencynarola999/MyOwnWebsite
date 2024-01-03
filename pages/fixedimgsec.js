@@ -32,7 +32,7 @@ const Fixedimgsec = () => {
         <div className='container-fluid p-0 g-0'>
             <div className="fixedimg">
                 <div className="fix2">
-                    <div className="container text-center p-0">
+                    <div className="container text-center p-0 g-0">
                         <h2>WHAT'S CUSTOMER SAY?</h2>
                         <h4>--- o ---</h4>
                         <Carousel >

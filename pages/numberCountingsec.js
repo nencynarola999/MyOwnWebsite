@@ -42,7 +42,7 @@ const NumberCountingsec = () => {
     ]
     return (
         <div className='container-fluid mt-5 mb-5 p-0 py-5 g-0 bg-black'>
-            <div className="container  p-0">
+            <div className="container p-0 g-0">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-0">
                     {
                         array?.map((x, i) => {

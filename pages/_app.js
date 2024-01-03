@@ -6,6 +6,7 @@ import "@/styles/_Main.scss";
 import "@/styles/_About.scss";
 import "@/styles/_Project.scss";
 import "@/styles/_Service.scss";
+import "@/styles/_Blog.scss";
 import "@/styles/_Contact.scss";
 import "@/styles/_Var.scss";
 import Arrowimgsec from './arrowimgsec';

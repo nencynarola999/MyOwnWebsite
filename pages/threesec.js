@@ -68,5 +68,4 @@ const Threesec = () => {
         </div >
     )
 }
-
 export default Threesec

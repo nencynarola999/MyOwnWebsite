@@ -32,5 +32,4 @@ const Colorsec = () => {
     </>
   )
 }
-
 export default Colorsec

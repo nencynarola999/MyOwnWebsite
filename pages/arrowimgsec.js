@@ -9,5 +9,4 @@ const Arrowimgsec = () => {
   </div>
   )
 }
-
 export default Arrowimgsec

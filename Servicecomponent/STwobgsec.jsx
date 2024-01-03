@@ -8,7 +8,7 @@ const STwobgsec = () => {
     return (
         <div className='container-fluid g-0'>
             <div className="STwobgsecdiv">
-                <div className="row row-cols-1 row-cols-lg-2">
+                <div className="row row-cols-1 row-cols-lg-2 g-0">
                     <div className="col"  data-aos="fade-down"  data-aos-duration="1500">
                         <div className="Stwobg1">
                             <h2></h2>
@@ -29,5 +29,4 @@ const STwobgsec = () => {
         </div>
     )
 }
-
 export default STwobgsec

@@ -11,19 +11,29 @@
   z-index: 99;
   box-shadow: rgba($black-color, 0.25) 0px 5px 15px;
 
+  .coloricon {
+    animation: spin 13s linear infinite;
+    transform: rotateZ(0deg);
+
+    @keyframes spin {
+      0% {
+        transform: rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+
+
   .dropdown-toggle {
     box-shadow: rgba(var(--data-color-logo), 0.25) 0px 5px 15px;
     background-color: $white-color;
     border: none;
     color: var(--data-color-logo);
     padding: 15px;
-    // animation: spin 10s linear infinite;
-    // transform: rotateZ(360deg); 
-    // @keyframes spin { 
-    //     100% { 
-    //       transform: rotateZ(360deg); 
-    //     }
-    //   }
+
 
     &:hover {
       background-color: $white-color;
@@ -110,16 +120,63 @@
   justify-content: space-between;
   align-content: space-between;
 
-  .navlinkdiv {
-    padding: 37px 12px;
-    transition: all .5s ease;
-    @include Fsizeweight(18px, 500);
-    color: $black-color;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
 
-    &:hover {
-      color: $white-color;
+    li {
+      list-style-type: none;
+      margin: 0px 10px;
+
+      .navlinkdiv {
+        color: $text-darkcolor;
+        padding: 35px 12px;
+        font-weight: 600;
+        border-top: 8px solid transparent;
+        background-color: transparent;
+        border-width: 8px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin: 0px 10px;
+
+        &:hover {
+          border-top: 8px solid var(--data-color-logo);
+          background: var(--data-color-lightcolor);
+
+        }
+      }
+
+      .navlinkkk {
+
+        color: $text-darkcolor;
+        padding: 35px 12px;
+        font-weight: 600;
+        border-top: 8px solid var(--data-color-logo);
+        background-color: var(--data-color-lightcolor);
+        border-width: 8px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin: 0px 10px;
+
+      }
     }
   }
+
+  // .navlinkdiv {
+  //   padding: 37px 12px;
+  //   transition: all .5s ease;
+  //   @include Fsizeweight(18px, 500);
+  //   color: $black-color;
+
+  //   &:hover {
+  //     color: $white-color;
+  //   }
+  // }
 
   .mainnavlinkdiv2 {
     display: flex;

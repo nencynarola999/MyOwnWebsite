@@ -44,5 +44,4 @@ const AFoursec = () => {
         </div>
     )
 }
-
 export default AFoursec

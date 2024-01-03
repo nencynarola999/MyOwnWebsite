@@ -3,7 +3,6 @@ import CMapsec from '@/ContactUscomponent/CMapsec'
 import Cthreedivsec from '@/ContactUscomponent/Cthreedivsec'
 import React from 'react'
 import Formbgsec from './formbgsec'
-
 const contact = () => {
   return (
     <div>

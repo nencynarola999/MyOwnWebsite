@@ -10,8 +10,8 @@ const Psiximage = () => {
         <div className='container-fluid mt-5 mb-5 g-0 p-0'>
             <div className="container g-0 p-0">
                 <div className="sixmaindiv">
-                    <h1>CHOOSE AN <span>DESIGN</span></h1>
-                    <h6>AT VERO EOS ET ACCUSAMUS ET IUSTO ODIO</h6>
+                    <h2>CHOOSE AN <span>DESIGN</span></h2>
+                    <p>AT VERO EOS ET ACCUSAMUS ET IUSTO ODIO</p>
                 </div>
                 <div className=''>
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0">

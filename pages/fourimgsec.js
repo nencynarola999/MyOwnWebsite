@@ -115,7 +115,7 @@ const Fourimgsec = () => {
         <div>
             <div className='container-fluid g-0'>
                 <div className="fourimg pb-5">
-                    <div className="container px-4">
+                    <div className="container px-4 g-0">
                         <div className="fourtextwritten">
                             <h2>FEATURED PRODUCTS</h2>
                             <p> ipsum, dolor sit amet consectetur adipisicing elit Libero accusantium cuipsum dolor maiores ex</p>

@@ -69,5 +69,4 @@ const SSixdivsec = () => {
         </div >
     )
 }
-
 export default SSixdivsec

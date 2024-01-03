@@ -57,5 +57,4 @@ const Amainsec = () => {
         </div>
     )
 }
-
 export default Amainsec

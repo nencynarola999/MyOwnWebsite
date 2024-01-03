@@ -99,5 +99,4 @@ const Formbgsec = () => {
     </div>
   )
 }
-
 export default Formbgsec

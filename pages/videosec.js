@@ -5,7 +5,7 @@ const Videosec = () => {
   return (
     <div className='container-fluid g-0 p-0'>
       <div className="videomaindiv">
-        <div className="container">
+        <div className="container g-0">
           <div className="videosub1">
             <div>
               <img src="/videoimg.jpg" alt="" />

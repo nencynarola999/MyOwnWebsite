@@ -44,5 +44,4 @@ const Cthreedivsec = () => {
         </div>
     )
 }
-
 export default Cthreedivsec

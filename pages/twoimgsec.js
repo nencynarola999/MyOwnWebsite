@@ -6,10 +6,10 @@ const Twoimgsec = () => {
         Aos.init();
     }, [])
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid  g-0 p-0'>
             <div className="twoimgmaindiv">
-                <div className="container">
-                    <div className='row'>
+                <div className="container p-0 g-0">
+                    <div className='row g-0'>
                         <div className="col-12 col-lg-7 ">
                             <div className="twoimgset" data-aos="fade-right" data-aos-duration="1500">
                                 <h4>
@@ -17,12 +17,12 @@ const Twoimgsec = () => {
                                 </h4>
                                 <img src="/bgi8.jpg" alt="" />
                                 <div className='twoimgsetdiv'>
-                                    <h1 className='twoimgsetdivh1'><CountUp
+                                    <p className='twoimgsetdivh1 mb-0'><CountUp
                                         start={10}
                                         end={25}
                                         duration={2}
                                         enableScrollSpy
-                                    />%</h1>
+                                    />%</p>
                                     <h3 className='mt-3 twoimgsetdivh3'>SALE</h3>
                                 </div>
                                 <h2 className='twoimgseth2'></h2>

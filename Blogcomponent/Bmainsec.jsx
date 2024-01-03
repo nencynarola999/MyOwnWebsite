@@ -97,8 +97,8 @@ const Bmainsec = () => {
                                     <MdOutlineKeyboardDoubleArrowRight className='fs-4' />
                                     <Link href="" className='ms-4'><h5 className='m-0'>New School Teachers</h5></Link>
                                 </div>
-                                <h1 className='pt-5'>Search</h1>
-                                <input type="search" required /><br />
+                                <h1 className='pt-5 fs-1'>Search</h1>
+                                <input type="search" required className='mb-0' /><br />
                                 <button>SEARCH</button>
                             </div>
                         </div>

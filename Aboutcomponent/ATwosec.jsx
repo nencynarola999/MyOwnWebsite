@@ -23,8 +23,8 @@ const ATwosec = () => {
                         <div className="col p-2" data-aos="fade-down-left" data-aos-duration="1500">
                             <div className="twosecseconddiv">
                                 <h6 className='twosecseconddivh6'>Trendy Collection's</h6><br />
-                                <h1 className='twosecseconddivh1'>HIGHEST QUALITY</h1>
-                                <h2 className='twosecseconddivh2'>COLLECTION</h2><br />
+                                <h2 className='twosecseconddivh1'>HIGHEST QUALITY</h2>
+                                <h3 className='twosecseconddivh2'>COLLECTION</h3><br />
                                 <p className='twosecseconddivp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, facere. Lorem ipsum dolor sit.</p><br />
                                 <h4 className='twosecseconddivh4'>Reviews</h4><br />
                                 <div>

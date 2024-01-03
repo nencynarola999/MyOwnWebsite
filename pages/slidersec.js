@@ -99,5 +99,4 @@ const Slidersec = () => {
         </div>
     )
 }
-
 export default Slidersec

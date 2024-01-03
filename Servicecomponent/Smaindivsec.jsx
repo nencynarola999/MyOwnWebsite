@@ -63,5 +63,4 @@ const Smaindivsec = () => {
         </div>
     )
 }
-
 export default Smaindivsec

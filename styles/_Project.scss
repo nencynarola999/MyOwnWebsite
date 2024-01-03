@@ -26,7 +26,7 @@
             color: var(--data-color-logo);
         }
 
-        h1 {
+        h2 {
             color: $white-color;
             line-height: 50px;
         }
@@ -75,7 +75,7 @@
     text-align: center;
     margin: 100px 0px;
 
-    h1 {
+    h2 {
         color: $text-darkcolor;
         @include Fsizeweight(45px, bold);
         font-family: Oswald, sans-serif;
@@ -86,7 +86,7 @@
         }
     }
 
-    h6 {
+    p {
         font-size: 15px;
         color: $text-lightcolor;
         font-family: Oswald, sans-serif;

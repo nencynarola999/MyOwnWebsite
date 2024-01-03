@@ -43,7 +43,7 @@ const PFixedimgsec = () => {
                             <div className="col-12 p-2 col-lg-4" data-aos="fade-right" data-aos-duration="1500">
                                 <div className="">
                                     <h6>Reviews</h6>
-                                    <h1>Where Clients Say?</h1>
+                                    <h2 className='fs-1'>Where Clients Say?</h2>
                                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perspiciatis minima, repellat magnam hic quisquam cupiditate voluptas dicta ad consectetur blanditiis excepturi eius ipsam nesciunt fugiat, natus maxime quis odit!</p>
                                 </div>
                             </div>
